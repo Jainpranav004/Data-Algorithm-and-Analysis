@@ -16,16 +16,13 @@ public class Dated_21_03 {
     }
 
 
-//    public static int PrintCount(int n, int count ){
-//        if (n == 0 ) {
-//            return count;
-//        }
-//        else{
-//            int temp = n/10;
-//            count++;
-//        }
-//        return count;
-//    }
+    public static int PrintCount(int n){
+        int count = 0;
+        if(n == 0){
+            return 0;
+        }
+        return PrintCount(n/10) + 1;
+    }
 
     public static boolean isPalindrome(int num1) {
         return num1 == reverse(num1);
@@ -36,7 +33,7 @@ public class Dated_21_03 {
         int rev = 0;
         while (n > 0) {
             int lastDig = n % 10;
-            rev = rev *    10 + lastDig;
+            rev = rev *  10 + lastDig;
             n /= 10;    //Removes the last digit
         }
         return rev;

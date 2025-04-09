@@ -24,4 +24,4 @@ public class Dated_28_03 {
                 int result = JosephProblem(n-1,k);
                 return ( result + (k+1) ) % (n+1) ;
             }
-    }
+    }}
